@@ -3,64 +3,89 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>恢復購買（Restore Purchases）｜[[AppName]]</title>
+  <title>回復購買（Restore Purchases）｜AlgoPro</title>
   <style>
     :root { color-scheme: light dark; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang HK", "Noto Sans TC", Arial, sans-serif; margin:0; line-height:1.65; }
-    header { padding: 28px 16px; border-bottom: 1px solid rgba(0,0,0,.08); }
-    main { max-width: 920px; margin: 0 auto; padding: 20px 16px 40px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang HK", "Noto Sans TC", Arial, sans-serif; margin:0; line-height:1.7; }
+    header { padding: 28px 16px; border-bottom: 1px solid rgba(127,127,127,.22); }
+    main { max-width: 920px; margin: 0 auto; padding: 20px 16px 44px; }
     h1 { margin: 0 0 6px; font-size: 26px; }
-    .meta { opacity:.75; font-size: 14px; }
-    .step { border: 1px solid rgba(0,0,0,.08); border-radius: 14px; padding: 14px; background: rgba(127,127,127,.06); margin: 12px 0; }
+    .meta { opacity:.78; font-size: 14px; }
+    .box { border: 1px solid rgba(127,127,127,.28); border-radius: 14px; padding: 14px; background: rgba(127,127,127,.08); margin: 12px 0; }
     ol { padding-left: 20px; }
-    a { color: inherit; }
-    .note { opacity:.8; font-size: 14px; }
+    ul { padding-left: 20px; }
+    a { text-decoration: underline; color: inherit; }
+    footer { padding: 18px 16px; border-top: 1px solid rgba(127,127,127,.22); opacity:.78; font-size: 13px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>恢復購買（Restore Purchases）</h1>
-    <div class="meta">[[AppName]]｜最後更新：[[YYYY-MM-DD]]</div>
+    <h1>回復購買（Restore Purchases）</h1>
+    <div class="meta">AlgoPro｜最後更新：2026-02-07</div>
   </header>
 
   <main>
     <p>
-      如果你之前已經購買或訂閱過 <strong>[[AppName]]</strong>（例如更換裝置、重新安裝 App、或登入咗另一個帳戶），你可以透過「恢復購買」重新取回已購內容。
+      「回復購買（Restore Purchases）」用於<strong>重新驗證你已購買／已訂閱的狀態</strong>，
+      例如：更換裝置、重新安裝 App、或你發現訂閱權益未正確解鎖。
+    </p>
+    <p>
+      <strong>回復購買不會重新收費。</strong>它只會向 Apple 查詢並同步你現有的購買／訂閱狀態。
     </p>
 
-    <div class="step">
-      <h2 style="margin:0 0 8px; font-size:18px;">在 App 內恢復購買</h2>
+    <div class="box">
+      <h2 style="margin:0 0 8px; font-size:18px;">在 App 內回復購買</h2>
       <ol>
-        <li>打開 <strong>[[AppName]]</strong></li>
-        <li>去到「解鎖／訂閱」頁面（Paywall）</li>
-        <li>按 <strong>「恢復購買」</strong>（Restore Purchases）</li>
-        <li>確保你已用同一個 Apple ID 登入（同當初購買／訂閱時一致）</li>
+        <li>打開 <strong>AlgoPro</strong></li>
+        <li>前往「訂閱／解鎖」頁面</li>
+        <li>按 <strong>「回復購買（Restore Purchases）」</strong></li>
+        <li>確保裝置已連線到互聯網</li>
+        <li>
+          <strong>按需要完成 Apple ID 驗證</strong>（例如 Face ID／Touch ID／密碼），以便 Apple 驗證你的購買／訂閱狀態
+        </li>
       </ol>
-      <p class="note">一般幾秒內會完成同步；如果網絡較差可能需要再試。</p>
+      <p style="opacity:.82; font-size:14px; margin: 8px 0 0;">
+        提示：如你曾用另一個 Apple ID 購買／訂閱，必須登入同一個 Apple ID 才可成功回復。
+      </p>
     </div>
 
-    <div class="step">
-      <h2 style="margin:0 0 8px; font-size:18px;">常見問題</h2>
+    <div class="box">
+      <h2 style="margin:0 0 8px; font-size:18px;">常見問題（FAQ）</h2>
       <ul>
-        <li><strong>按咗都冇反應？</strong> 請先確認有網絡，並檢查 App 是否最新版本。</li>
-        <li><strong>仍然未解鎖？</strong> 可能你用緊另一個 Apple ID；請於 iOS「設定」→ Apple ID 檢查。</li>
-        <li><strong>已取消訂閱點算？</strong> 如果訂閱已到期，功能會按訂閱狀態停用；你可以重新訂閱。</li>
-        <li><strong>退款／扣款問題？</strong> 付款與退款一般由 Apple 處理，你可到 Apple 的訂閱管理頁面查閱。</li>
+        <li>
+          <strong>按咗回復購買都未解鎖？</strong><br>
+          請先確認：1) 有網絡 2) Apple ID 與當初購買／訂閱一致 3) 再試一次回復購買。
+        </li>
+        <li>
+          <strong>訂閱已到期／已取消，點解回復唔到？</strong><br>
+          呢個係正常情況：回復購買只會同步「目前有效」的購買／訂閱狀態；如訂閱已到期或已取消，權益會按狀態停止。
+        </li>
+        <li>
+          <strong>已退款點算？</strong><br>
+          若 Apple 已處理退款，相關購買／訂閱狀態可能會變為無效，回復購買亦不會重新啟用權益——呢個亦屬正常情況。
+        </li>
+        <li>
+          <strong>會唔會因為按回復購買而再次扣錢？</strong><br>
+          不會。回復購買只作重新驗證與同步狀態，不會產生新收費。
+        </li>
       </ul>
     </div>
 
-    <div class="step">
+    <div class="box">
       <h2 style="margin:0 0 8px; font-size:18px;">需要協助？</h2>
       <p>
-        如果你仍然無法恢復購買，請電郵我哋並提供：<br>
-        1) 你裝置型號與 iOS 版本、2) App 版本、3) 你見到嘅錯誤畫面／訊息（截圖）<br><br>
-        聯絡電郵：<a href="mailto:[[SupportEmail]]">[[SupportEmail]]</a>
+        如果你仍然無法成功回復購買，請電郵我哋並提供：<br>
+        1) iOS 版本 2) App 版本 3) 你見到嘅錯誤訊息／截圖（如有）<br><br>
+        支援電郵：<a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+      </p>
+      <p style="opacity:.82; font-size:14px; margin: 8px 0 0;">
+        請注意：支援電郵應與 App Store Connect 所列的 Support Email 一致。
       </p>
     </div>
   </main>
 
-  <footer style="padding: 18px 16px; border-top: 1px solid rgba(0,0,0,.08); opacity:.75; font-size: 13px;">
-    © [[YYYY]] [[CompanyName/DeveloperName]]. All rights reserved.
+  <footer>
+    © 2026 AlgoPro. All rights reserved.
   </footer>
 </body>
 </html>
